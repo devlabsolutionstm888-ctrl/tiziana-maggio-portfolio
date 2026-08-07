@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+import { translations } from '../i18n/translations.js';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+    { params: { lang: 'fr' } },
+    { params: { lang: 'de' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const t = translations[lang] || translations.it;
+---
+
+<Layout title="Tiziana Maggio Dev | Full-Stack React Developer" lang={lang}>
+  <Navbar currentLang={lang} t={t} client:load />
+
+  <main class="flex-1 flex flex-col items-center justify-center p-6 text-center mt-12">
+    <div class="max-w-3xl space-y-6">
+      <span class="px-4 py-1.5 text-xs font-semibold uppercase tracking-wider bg-indigo-500/10 text-indigo-400 rounded-full border border-indigo-500/20">
+        {t.badge}
+      </span>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+        {t.title.split(' ')[0]} <span class="text-indigo-500">{t.title.split(' ').slice(1).join(' ')}</span>
+      </h1>
+      <p class="text-lg text-gray-500 dark:text-gray-400">
+        {t.subtitle}
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 pt-4">
+        <a href="#progetti" class="px-6 py-3 font-medium bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl transition shadow-lg shadow-indigo-500/25">
+          {t.explore}
+        </a>
+        <a href="#contatti" class="px-6 py-3 font-medium bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-xl transition">
+          {t.contact}
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>

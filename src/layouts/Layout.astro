@@ -1,0 +1,42 @@
+---
+import '../styles/global.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import ChatWidget from '../components/ChatWidget.jsx';
+
+interface Props {
+  title: string;
+  lang?: string;
+}
+
+const { title, lang = 'it' } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    <!-- Script inline per evitare il flash del tema bianco all'avvio -->
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      })();
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
+    <slot />
+    
+    <!-- Mini-Brain IA integrato globalmente in tutte le lingue -->
+    <ChatWidget lang={lang} client:load />
+  </body>
+</html>
