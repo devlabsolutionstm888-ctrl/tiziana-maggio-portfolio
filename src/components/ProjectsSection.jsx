@@ -56,13 +56,29 @@ export default function ProjectsSection({ t }) {
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Life Flow</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
-            App olistica e monetizzata creata con Lovable per una vita sana ed equilibrata. Unisce ricette casalinghe e vegane, report finanziari sui risparmi rispetto al ristorante, e un sistema di premi artistici con citazioni della Grecia antica (Socrate, Platone) sbloccabili a ogni soglia.
+            App olistica e monetizzata creata con Lovable per una vita sana ed equilibrata. Unisce ricette casalinghe e vegane, report finanziari sui risparmi rispetto al ristorante, e un sistema di premi artistici con citazioni della Grecia antica.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100 dark:border-gray-800">
             <a href="https://lifeflow-dashboard.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
               {section.liveDemo || "Live Demo"}
             </a>
             <a href="/pdf/Life_Flow_Progetto.pdf" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 text-center font-bold py-3 px-6 rounded-xl transition">
+              {section.details || "Dettagli"}
+            </a>
+          </div>
+        </div>
+
+        {/* Progetto 4: Kebab Pedro Queens */}
+        <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Kebab Pedro Queens</h3>
+          <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
+            Piattaforma web moderna e ultra-veloce dedicata al Kebab, progettata per offrire un'esperienza utente fluida, menu interattivo e ottime performance su mobile.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100 dark:border-gray-800">
+            <a href="https://kebab-pedro-main.vercel.app/es/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
+              {section.liveDemo || "Live Demo"}
+            </a>
+            <a href="/pdf/modello_versatilita.pdf" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 text-center font-bold py-3 px-6 rounded-xl transition">
               {section.details || "Dettagli"}
             </a>
           </div>
