@@ -62,7 +62,7 @@ export default function ProjectsSection({ t }) {
             <a href="https://lifeflow-dashboard.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
               {section.liveDemo || "Live Demo"}
             </a>
-            <a href="https://lifeflow-dashboard.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 text-center font-bold py-3 px-6 rounded-xl transition">
+            <a href="/pdf/Life_Flow_Progetto.pdf" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 text-center font-bold py-3 px-6 rounded-xl transition">
               {section.details || "Dettagli"}
             </a>
           </div>
