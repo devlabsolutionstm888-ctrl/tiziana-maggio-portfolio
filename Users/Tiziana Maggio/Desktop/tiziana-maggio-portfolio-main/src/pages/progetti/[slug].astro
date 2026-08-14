@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.jsx';
+import { translations } from '../../i18n/translations.js';
+
+// Questa riga risolve l'errore: dice ad Astro di non tentare 
+// di pre-generare staticamente questa pagina.
+export const prerender = false;
+
+const { slug } = Astro.params;
+const t = translations.it;
+---
+
+<Layout title={`Progetto: ${slug || 'Dettaglio'} | Tiziana Maggio Dev`} lang="it">
+  <Navbar currentLang="it" t={t} client:load />
+
+  <main class="py-24 px-6 max-w-4xl mx-auto text-center space-y-6">
+    <span class="px-4 py-1.5 text-xs font-semibold uppercase tracking-wider bg-indigo-500/10 text-indigo-400 rounded-full border border-indigo-500/20">
+      Dettaglio Progetto
+    </span>
+    
+    <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight capitalize">
+      {slug ? slug.replace(/-/g, ' ') : 'Progetto'}
+    </h1>
+    
+    <p class="text-gray-600 dark:text-gray-400 text-lg">
+      Stiamo preparando la documentazione tecnica, le schermate e i dettagli di codice per questo progetto. Torna a trovarci presto!
+    </p>
+    
+    <div class="pt-6">
+      <a href="/" class="px-6 py-3 font-medium bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl transition shadow-lg shadow-indigo-500/25">
+        Torna alla Home
+      </a>
+    </div>
+  </main>
+</Layout>
