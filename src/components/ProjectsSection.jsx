@@ -20,15 +20,14 @@ export default function ProjectsSection({ t }) {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        
-        {/* Progetto 1: Sportello Facile (Sostituito al precedente) */}
+        {/* Progetto 1: Freelance Match */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Sportello Facile</h3>
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Freelance Match App</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
-            Piattaforma dedicata al matching tra professionisti e opportunità, con gestione dinamica delle offerte e delle candidature tramite database cloud.
+            {data.freelanceDesc}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100 dark:border-gray-800">
-            <a href="https://sportello-facile-eta.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
+            <a href="https://freelance-match-app-eyd9.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
               {section.liveDemo || "Live Demo"}
             </a>
             <a href="/pdf/freelance-match-strengths.pdf" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 text-center font-bold py-3 px-6 rounded-xl transition">
@@ -116,7 +115,6 @@ export default function ProjectsSection({ t }) {
             </a>
           </div>
         </div>
-
       </div>
     </section>
   );
