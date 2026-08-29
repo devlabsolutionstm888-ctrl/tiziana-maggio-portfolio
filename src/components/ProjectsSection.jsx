@@ -25,7 +25,7 @@ export default function ProjectsSection({ t }) {
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Sportello Facile</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
-            Piattaforma web avanzata e intuitiva progettata per ottimizzare la gestione di pratiche, clienti e servizi digitali.
+            Piattaforma web di gestione amministrativa avanzata e intuitiva progettata per ottimizzare la gestione di pratiche, clienti e servizi digitali.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100 dark:border-gray-800">
             <a href="https://sportello-facile-eta.vercel.app/" target="_blank" rel="noopener noreferrer" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
