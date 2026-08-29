@@ -34,7 +34,7 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
-        {/* Progetto 2: Freelance Match (AGGIORNATO) */}
+        {/* Progetto 2: Freelance Match */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Freelance Match App</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
@@ -50,7 +50,23 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
-        {/* Progetto 3: Velvet Café */}
+        {/* Progetto 3: Tavola Smeraldina React (NUOVO) */}
+        <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Tavola Smeraldina React</h3>
+          <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
+            Applicazione web moderna sviluppata in React, progettata per offrire un'esperienza interattiva avanzata, flussi fluidi e una gestione ottimizzata dei contenuti.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100 dark:border-gray-800">
+            <a href="https://tavola-smeraldina-react30.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
+              {section.liveDemo || "Live Demo"}
+            </a>
+            <a href="/pdf/Tavola_Smeraldina_Guida-v2.6.pdf" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 text-center font-bold py-3 px-6 rounded-xl transition">
+              {section.details || "Dettagli"}
+            </a>
+          </div>
+        </div>
+
+        {/* Progetto 4: Velvet Café */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Velvet Café & Lounge</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
@@ -66,7 +82,7 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
-        {/* Progetto 4: Life Flow */}
+        {/* Progetto 5: Life Flow */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Life Flow</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
@@ -82,7 +98,7 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
-        {/* Progetto 5: Kebab Pedro Queens */}
+        {/* Progetto 6: Kebab Pedro Queens */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Kebab Pedro Queens</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
@@ -98,7 +114,7 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
-        {/* Progetto 6: HTSX Language Engine */}
+        {/* Progetto 7: HTSX Language Engine */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">HTSX Language Engine</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
@@ -114,7 +130,7 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
-        {/* Progetto 7: Dev Workflow Assistant */}
+        {/* Progetto 8: Dev Workflow Assistant */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Dev Workflow Assistant</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
@@ -130,7 +146,7 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
-        {/* Progetto 8: OmniaDesk */}
+        {/* Progetto 9: OmniaDesk */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">OmniaDesk</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-4 leading-relaxed">
@@ -149,7 +165,7 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
-        {/* Progetto 9: Med on Hand */}
+        {/* Progetto 10: Med on Hand */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Med on Hand</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
@@ -162,7 +178,7 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
-        {/* Progetto 10: Domus Omnia ES */}
+        {/* Progetto 11: Domus Omnia ES */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Domus Omnia ES</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
