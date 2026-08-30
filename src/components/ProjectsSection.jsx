@@ -195,11 +195,8 @@ export default function ProjectsSection({ t }) {
             Piattaforma e portfolio avanzato sviluppato con tecnologie moderne, ottimizzato per un'esperienza visiva fluida e una presentazione professionale dei progetti.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100 dark:border-gray-800">
-            <a href="https://flutter-loom-ultimate-3-three.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
+            <a href="https://flutter-loom-ultimate-3-three.vercel.app/" target="_blank" rel="noopener noreferrer" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
               {section.liveDemo || "Live Demo"}
-            </a>
-            <a href="/pdf/Flutter_Loom_Ultimate_Portfolio.pdf" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 text-center font-bold py-3 px-6 rounded-xl transition">
-              {section.details || "Dettagli"}
             </a>
           </div>
         </div>
@@ -208,3 +205,4 @@ export default function ProjectsSection({ t }) {
     </section>
   );
 }
+
