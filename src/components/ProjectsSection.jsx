@@ -165,7 +165,7 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
-        {/* Progetto 10: Med on Hand (Aggiornato con il tuo PDF) */}
+        {/* Progetto 10: Med on Hand */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Med on Hand</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
@@ -181,15 +181,18 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
-        {/* Progetto 11: Domus Omnia ES */}
+        {/* Progetto 11: Domus Omnia ES (Aggiornato con il tuo PDF) */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Domus Omnia ES</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
             Piattaforma web per la gestione amministrativa avanzata dedicata al mercato spagnolo, progettata per la gestione e la monetizzazione di annunci e servizi immobiliari con un'esperienza utente ottimizzata.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100 dark:border-gray-800">
-            <a href="https://domus-omnia-es.vercel.app/" target="_blank" rel="noopener noreferrer" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
+            <a href="https://domus-omnia-es.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
               {section.liveDemo || "Live Demo"}
+            </a>
+            <a href="https://drive.google.com/file/d/19i5wieeCIAw4TYXKQxbinAfJi3-zI9hn/preview" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 text-center font-bold py-3 px-6 rounded-xl transition">
+              {section.details || "Dettagli"}
             </a>
           </div>
         </div>
