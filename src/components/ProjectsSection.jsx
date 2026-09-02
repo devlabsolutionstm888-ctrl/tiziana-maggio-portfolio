@@ -232,6 +232,22 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
+        {/* Progetto 14: Predictive Runtime Guardian */}
+        <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Predictive Runtime Guardian</h3>
+          <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
+            Sistema di monitoraggio e protezione predittiva in tempo reale per applicazioni enterprise, progettato per rilevare anomalie di runtime e prevenire guasti critici dell'infrastruttura.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100 dark:border-gray-800">
+            <a href="https://predictive-runtime-guardian.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
+              {section.liveDemo || "Live Demo"}
+            </a>
+            <a href="https://drive.google.com/file/d/1obelHcbuh644RD6CpqEn9DS1PNSomGRj/preview" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 text-center font-bold py-3 px-6 rounded-xl transition">
+              {section.details || "Dettagli"}
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
   );
