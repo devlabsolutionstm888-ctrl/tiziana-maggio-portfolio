@@ -335,7 +335,7 @@ export default function ProjectsSection({ t }) {
             Architettura di rete decentralizzata e resiliente per comunicazioni sicure e resistenti a censura o interruzioni di infrastruttura, ottimizzata per scenari critici e distribuiti.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100 dark:border-gray-800">
-            <a href="https://resilient-mesh.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
+            <a href="https://drive.google.com/file/d/11feuJc22z74eHBhfzceJxJSx3qSTRGcM/preview?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
               {section.liveDemo || "Live Demo"}
             </a>
             <a href="https://drive.google.com/file/d/11feuJc22z74eHBhfzceJxJSx3qSTRGcM/preview?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 text-center font-bold py-3 px-6 rounded-xl transition">
