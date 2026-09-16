@@ -360,6 +360,22 @@ export default function ProjectsSection({ t }) {
           </div>
         </div>
 
+        {/* Progetto 22: Recruit Pulse */}
+        <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Recruit Pulse</h3>
+          <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
+            Piattaforma innovativa per il recruiting e la gestione dei processi di selezione, progettata per ottimizzare il flusso di lavoro delle risorse umane con un'interfaccia moderna e interattiva.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100 dark:border-gray-800">
+            <a href="https://recruit-pulse.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
+              {section.liveDemo || "Live Demo"}
+            </a>
+            <a href="https://drive.google.com/file/d/1_nDjYmpSq-HDgtFrfM9bR_-QwPCWk5rc/preview?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 text-center font-bold py-3 px-6 rounded-xl transition">
+              {section.details || "Dettagli"}
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
   );
