@@ -421,7 +421,7 @@ export default function ProjectsSection({ t }) {
             </a>
           </div>
         </div>
-        {/* Progetto 26: Pulse Analytics */}
+        {/* Progetto 26: Pulse Analytics  */}
         <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Pulse Analytics</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
