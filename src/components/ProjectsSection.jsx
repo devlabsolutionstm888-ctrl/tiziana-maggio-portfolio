@@ -421,6 +421,20 @@ export default function ProjectsSection({ t }) {
             </a>
           </div>
         </div>
+        {/* Progetto 26: Pulse Analytics */}
+        <div className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Pulse Analytics</h3>
+          <p className="text-gray-600 dark:text-gray-300 text-base mb-8 leading-relaxed">
+            Piattaforma di analisi dati avanzata e monitoraggio in tempo reale delle performance digitali, progettata per offrire metriche dettagliate e dashboard interattive ad alte prestazioni.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100 dark:border-gray-800">
+            <a href="https://pulse-analytics-core.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-3 px-6 rounded-xl transition">
+              {section.liveDemo || "Live Demo"}
+            </a>
+            <a href="https://drive.google.com/file/d/1IZQ6vDbSVeu_qrzgkuIIadcgIwMf3u5K/preview?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 text-center font-bold py-3 px-6 rounded-xl transition">
+              {section.details || "Dettagli"}
+            </a>
+          </div>
       </div>
     </section>
   );
